@@ -4,13 +4,13 @@ function generate_bicubic_img()
 
 %% set configurations
 % comment the unnecessary lines
-input_folder = '../../datasets/Set5/original';
-save_mod_folder = '../../datasets/Set5/GTmod12';
-save_lr_folder = '../../datasets/Set5/LRbicx2';
+input_folder = '../../datasets/ImageNet/NonRGB_data';
+% save_mod_folder = '../../datasets/ImageNet/GTmod4';
+save_lr_folder = '../../datasets/ImageNet/L_LRbicx4';
 % save_bic_folder = '';
 
-mod_scale = 12;
-up_scale = 2;
+mod_scale = 4;
+up_scale = 4;
 
 if exist('save_mod_folder', 'var')
     if exist(save_mod_folder, 'dir')
